@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>EShopper - Bootstrap Shop Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="gog1.css">
+</head>
+<style>
+        h1 {
+      font-size: 40px;
+      margin: 0px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 0px;
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+    a:hover {
+      color: white;
+    }
+    img{
+       border: 1px solid #ddd;
+       border-radius: 4px;
+       padding: 5px;
+       margin: 20px;
+       width: 320px;
+       height: 260px;
+   }
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  padding-left: 140px;
+  padding-right: 90px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-grid;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
+.p2 {
+  color: whitesmoke;
+  padding: 60px;
+    font-size: 22px;
+    font-family: cursive;
+}
+ .container1 {
+    width: 90%;
+    padding: 40px;
+    border: solid black;
+    margin: 10px auto;
+    background: #FFF0F5;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+    }
+    .container2 {
+    width: 90%;
+    padding: 40px;
+    border: solid black;
+    margin: 10px auto;
+    background: black;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
+      </style>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Support</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Gifts</h1>
+                </a>
+            </div>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
+                     <div class="navbar-nav w-100 overflow-hidden" style="height: 280px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Dresses <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="https://www.flipkart.com/q/dress-for-men" class="dropdown-item"> Men's Dresses</a>
+                                <a href="https://www.myntra.com/dresses" class="dropdown-item">Women's Dresses</a>
+                                <a href="https://www.hopscotch.in/?utm_source=Google&utm_medium=search&utm_campaign=Google_Branded_03Aug2021&campaignid=2045371158&adgroupid=72358687636&keyword=mother%20daughter%20dresses%20hopscotch&device=c&gclid=EAIaIQobChMI1oCh7sf4-gIV0X8rCh0UAQEzEAAYASAAEgKlA_D_BwE" class="dropdown-item">Baby's Dresses</a>
+                            </div>
+                        </div>
+                        <a href="https://desicrow.com/product-category/couples/" class="nav-item nav-link">Shirts</a>
+                        <a href="https://www.fastrack.in/shop/collections-quirky?utm_source=Google&utm_medium=CPC&utm_Campaign=ADL_FT_Festive_Conversion_RLSA_Oct&gclid=EAIaIQobChMI-7Cg58z4-gIV5JVLBR3KwgReEAAYAyAAEgL-aPD_BwE" class="nav-item nav-link">Watches</a>
+                        <a href="https://www.flipkart.com/q/designer-jeans" class="nav-item nav-link">Jeans</a>
+                        <a href="https://www.amazon.in/s?k=jacket+for+men+and+women&adgrpid=59666530995&ext_vrnc=hi&gclid=EAIaIQobChMIpOPy78v4-gIV2ZNmAh1yYw1PEAAYASAAEgLHSvD_BwE&hvadid=379967462617&hvdev=c&hvlocphy=9298595&hvnetw=g&hvqmt=e&hvrand=47401747438541206&hvtargid=kwd-467804068764&hydadcr=23430_1935728&tag=googinhydr1-21&ref=pd_sl_1t4nza5n2e_e" class="nav-item nav-link">Jackets</a>
+                        <a href="https://www.amazon.in/s?k=sgoes&i=shoes&adgrpid=64442418128&ext_vrnc=hi&gclid=EAIaIQobChMI7Ijx08v4-gIVm34rCh1Isgf-EAAYASAAEgIBJ_D_BwE&hvadid=590593690953&hvdev=c&hvlocphy=9298595&hvnetw=g&hvqmt=b&hvrand=12468066953786061840&hvtargid=kwd-296067633302&hydadcr=22137_2255502&tag=googinhydr1-21&ref=pd_sl_2ka1ykecn9_b" class="nav-item nav-link">Shoes</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="shop.html" class="nav-item nav-link active">Shop</a>
+                            <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0">
+                            <a href="loginp1.html" class="nav-item nav-link">Login</a>
+                            <a href="gog.html" class="nav-item nav-link">Register</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Our Shop</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="index.html">Home</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0">Shop</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+                <!-- Price Start -->
+                <h1>Filter by price</h1>
+                <div class="container2">
+                    <form>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="price-all">
+                            <label class="custom-control-label" for="price-all"><a href="https://www.amazon.in/s?k=gifts&i=kitchen&crid=3STOU71ZXJ62X&sprefix=%2Ckitchen%2C1504&ref=nb_sb_noss_2">All Prices</a></label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-1">
+                            <label class="custom-control-label" for="price-1"><a href="https://www.amazon.in/s?k=gifts+under+100+rupees&rh=p_36%3A-10000&qid=1669692038&rnid=3444809031&ref=sr_nr_p_36_1">0-100</a></label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-2">
+                            <label class="custom-control-label" for="price-2"> <a href="https://www.amazon.in/s?k=gifts+under+100+rupees&rh=p_36%3A10000-50000&qid=1669692065&rnid=3444809031&ref=sr_nr_p_36_1">100 - 500</a></label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-3">
+                            <label class="custom-control-label" for="price-3"><a href="https://www.amazon.in/s?k=gifts+under+100+rupees&rh=p_36%3A50000-100000&qid=1669692163&rnid=3444809031&ref=sr_nr_p_36_1">500 - 1000 </a></label>
+                            <span class="badge border font-weight-normal">246</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-4">
+                            <label class="custom-control-label" for="price-4"><a href="https://www.amazon.in/s?k=gifts&rh=n%3A976442031%2Cp_36%3A3444812031&dc&ds=v1%3AR3qisq%2Brtv2GDxh3iPkwybBqsvjL2Il%2BTD5rXlUvOy0&crid=875I7J5OA2VF&qid=1669692305&rnid=3444809031&sprefix=%2Caps%2C1323&ref=sr_nr_p_36_3">1000 - 2000 </a></label>
+                            <span class="badge border font-weight-normal">145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="price-5">
+                            <label class="custom-control-label" for="price-5"> <a href="https://www.amazon.in/s?k=gifts&i=kitchen&rh=n%3A976442031%2Cp_36%3A3444813031&dc&ds=v1%3A%2BtATAonEBL3QLCfoBc3lLQlDkUsOYI%2BNvEfL65z96PI&crid=875I7J5OA2VF&qid=1669692322&rnid=3444809031&sprefix=%2Caps%2C1323&ref=sr_nr_p_36_3"> more than 2000</a></label>
+                            <span class="badge border font-weight-normal">168</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Price End -->
+                 <h1>Toys</h1>
+   <div class="container1">
+    <p1><img src="https://m.media-amazon.com/images/I/61pxG5lefAL._SX355_.jpg"><br><a href="https://www.amazon.in/IndusBay-Shooting-Crystal-Bullets-Plastic/dp/B086726JLX/ref=sr_1_31?keywords=KIDS+gun+toys&qid=1656153095&sr=8-31" class="button">Indusbay</a></p1>
+    <p1><img src="https://rukminim1.flixcart.com/image/416/416/kua4r680/musical-toy/c/d/y/xylophone-musical-toys-for-kids-3-years-wooden-musical-original-imag7g6g5ybemxtg.jpeg?q=70"><br><a href="https://www.flipkart.com/toyhills-xylophone-musical-toys-kids-3-years-wooden-instrument-8-note-1-xylophone-2-sticks/p/itmc411c95641393?pid=MTYG7G6GURVUKSFZ&lid=LSTMTYG7G6GURVUKSFZBBGKTO&marketplace=FLIPKART&q=toys+for+kids&store=tng&srno=s_1_37&otracker=search&fm=search-autosuggest&iid=80cc63cc-b721-48e4-a3ad-87b4c2b3a527.MTYG7G6GURVUKSFZ.SEARCH&ppt=browse&ppn=browse&ssid=4uf72kftwg0000001656153516931&qH=376d6e440a1e72a4" class="button">Toyhills</a></p1>
+    <p1><img src="https://rukminim1.flixcart.com/image/416/416/l1fc0i80/learning-toy/f/b/x/spelling-skills-word-scrambles-english-alphabets-wooden-spelling-original-imagczyedgtbhf6y.jpeg?q=70"><br><a href="https://www.flipkart.com/tantrums-spelling-skills-word-scrambles-english-alphabets-wooden-toys-kids/p/itma14491de891a4?pid=ETYG9YQEHZEQNKPH&lid=LSTETYG9YQEHZEQNKPHMLTKEM&marketplace=FLIPKART&q=toys+for+kids&store=tng&srno=s_1_12&otracker=search&fm=search-autosuggest&iid=en_uSBUdShwF%2FkUALzndUPf%2B6ERIKGcdPbKCjVCvZDI7WZDXdX0Y18Iinr6CHLniavKagVuygVckNvEh1XOCQeKGA%3D%3D&ppt=browse&ppn=browse&qH=376d6e440a1e72a4" class="button">Tantrums</a></p1>
+  </div>
+   <h1> Plants</h1>
+   <div class="container1">
+    <p1><img src="https://m.media-amazon.com/images/I/61eqxrWT+wL._AC_UY327_FMwebp_QL65_.jpg"><br><a href="https://www.amazon.in/TrustBasket-Attractive-Watering-Purifying-Workspace/dp/B0B3T1YV55/ref=sr_1_1_sspa?crid=2RK31SHXKIQXB&keywords=plants&qid=1656685597&sprefix=plants+%2Caps%2C478&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRzZWMkpJTkRZM0RRJmVuY3J5cHRlZElkPUEwMDU4NDMxMjFFVU1ZUDZFR0JVMCZlbmNyeXB0ZWRBZElkPUEwODY0OTM3WUdWRTRXWElFSFFOJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" class="button">Spider Plant</a></p1>
+    <p1><img src="https://m.media-amazon.com/images/I/61wsWXlRuFL._SY450_.jpg"><br><a href="https://www.amazon.in/Ugaoo-Good-Luck-Plant-Watering/dp/B07QZXPF9W/ref=sr_1_2_sspa?crid=2RK31SHXKIQXB&keywords=plants&qid=1656685597&sprefix=plants+%2Caps%2C478&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRzZWMkpJTkRZM0RRJmVuY3J5cHRlZElkPUEwMDU4NDMxMjFFVU1ZUDZFR0JVMCZlbmNyeXB0ZWRBZElkPUEwMTc2OTk1QTQ3VlJRRlY1WUVLJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" class="button">Jade Plant</a></p1>
+    <p1><img src="https://m.media-amazon.com/images/I/41-knssZyGL._SY450_.jpg"><br><a href="https://www.amazon.in/Nurturing-Green-Lucky-Bamboo-Layer/dp/B00O73ISWI/ref=sr_1_omk_4?crid=2RK31SHXKIQXB&keywords=plants&qid=1656685597&sprefix=plants+%2Caps%2C478&sr=8-4" class="button">Bamboo Plant</a></p1>
+  </div>
+   <div class="container1">
+    <p1><img src="https://m.media-amazon.com/images/I/71XHfjBqSdL._SY450_.jpg"><br><a href="https://www.amazon.in/Abana-Homes-Plant-Beautiful-Coffee/dp/B07GCR12XR/ref=sr_1_5?crid=2RK31SHXKIQXB&keywords=plants&qid=1656685597&sprefix=plants+%2Caps%2C478&sr=8-5" class="button">Air Purifier</a></p1>
+    <p1><img src="https://m.media-amazon.com/images/I/41r60DteUlL.jpg"><br><a href="https://www.amazon.in/Areca-Plant-Natural-Outdoor-Purifier/dp/B09XB2F2FS/ref=sr_1_6?crid=2RK31SHXKIQXB&keywords=plants&qid=1656685597&sprefix=plants+%2Caps%2C478&sr=8-6" class="button">Arcea Plant</a></p1>
+    <p1><img src="https://m.media-amazon.com/images/I/61w0c0qeqXL._SX425_.jpg"><br><a href="https://www.amazon.in/Ugaoo-Golden-Money-Indoor-Watering/dp/B07SWRC12Q/ref=sr_1_8?crid=2RK31SHXKIQXB&keywords=plants&qid=1656685597&sprefix=plants+%2Caps%2C478&sr=8-8" class="button">Money plant</a></p1>
+  </div><hr> <h1>Ethnic wear</h1>
+    <div class="container1">
+      <p1><img src="https://th.bing.com/th/id/OIP.sDwjtVEKG4pobA087qWvFwHaJ4?w=144&h=192&c=7&r=0&o=5&dpr=1.25&pid=1.7"><br><a href="https://www.myntra.com/lehenga-choli/fabpixel/fabpixel-orange--gold-toned-embroidered-sequinned-shibori-semi-stitched-lehenga--unstitched-blouse-with/18743884/buy" class="button">Dress</a></p1>
+      <p1><img src="https://rukminim1.flixcart.com/image/714/857/kzpw2vk0/sari/a/b/s/free-2267s104-samah-unstitched-original-imagbz63yn5vhquf.jpeg?q=50"><br><a href="https://dl.flipkart.com/s/NgHS8ruuuN
+" class="button">Saree</a></p1>
+      <p1><img src="https://rukminim1.flixcart.com/image/714/857/kyhlfgw0/sari/u/k/b/free-if004-ishika-fab-unstitched-original-imagapp2hqhgdpdy.jpeg?q=50"><br><a href="https://dl.flipkart.com/s/uR8RN1NNNN" class="button">Saree</a></p1>
+    </div>
+    <h1>Colthing casual</h1>
+    <div class="container1">
+      <p1><img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/10604484/2019/9/13/6ab71496-74d6-4258-9310-a34c75f7be441568374869936-SASSAFRAS-Women-Jeans-2881568374868311-1.jpg"><br><a href="https://www.myntra.com/jeans/sassafras/sassafras-women-blue-straight-fit-mid-rise-clean-look-cropped-jeans/10604484/buy" class="button">Pant</a></p1>
+      <p1><img src="https://rukminim1.flixcart.com/image/714/857/k7w8eq80/top/g/5/x/xl-lace01-white-stylistico-original-imafqyh8qdtrtc9b.jpeg?q=50"><br><a href="https://www.flipkart.com/stylistico-casual-half-sleeve-solid-women-white-top/p/itm5c07020b8f001?pid=TOPFQY8WSCQR6NQH&lid=LSTTOPFQY8WSCQR6NQHSGAQQL&marketplace=FLIPKART&store=clo%2Fash%2Fohw%2F36j&srno=b_1_33&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Fashion~Women%2BWestern~Women%2BTops_1KTYWEYQ9HU1&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L2_view-all&fm=organic&iid=96337374-b2f8-4a4a-981b-198dca2c93ba.TOPFQY8WSCQR6NQH.SEARCH&ppt=browse&ppn=browse&ssid=uggx2cmn8g0000001656318873007" class="button">Tops</a></p1>
+      <p1><img src="https://m.media-amazon.com/images/I/41tZEuoskWL._UX522_.jpg"><br><a href="https://www.amazon.in/Rimsha-Wear-Womens-Coral-Fancy/dp/B09SBG9NHJ/ref=sr_1_18?fst=as%3Aoff&pf_rd_i=1968542031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=629c266a-f7c9-4115-888e-7c3bfa05b9f6&pf_rd_r=SBHVJAB1K509G1N58BTG&pf_rd_s=merchandised-search-3&pf_rd_t=30901&qid=1656319378&rnid=11301356031&s=apparel&sr=1-18" class="button">Tops</a></p1>
+    </div>
+    <h1>Watches</h1>
+   <div class="container1">
+    <p1><img src="https://m.media-amazon.com/images/I/51N7CXgnmZL._SY355_.jpg"><br><a href="https://www.amazon.in/AQFIT-Smartwatch-Resistant-Integrated-Bluetooth/dp/B09GBF8TL6/ref=sr_1_19?crid=2RC4N2HY1W89N&keywords=watches+for+men&qid=1656150083&rnid=3576079031&s=watches&sprefix=watches+for+men%2Caps%2C368&sr=1-19" class="button">AQFIT</a></p1>
+    <p1><img src="https://m.media-amazon.com/images/I/61onxRqQXlL._SY450_.jpg"><br><a href="https://www.amazon.in/dp/B0B2Q1W9WP/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=3c52a802cfd2e94be6b9b86593476584&content-id=amzn1.sym.c679a10e-5f33-4f2e-b014-f92eed44a58f%3Aamzn1.sym.c679a10e-5f33-4f2e-b014-f92eed44a58f&hsa_cr_id=4924906800302&pd_rd_plhdr=t&pd_rd_r=c77a001d-fdbb-4e20-9cb1-60b0760fc391&pd_rd_w=ENqAc&pd_rd_wg=ykcRi&qid=1656670914&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&sr=1-1-fd947bf3-57d2-4cc9-939d-2805f92cef28" class="button">Fire-Boltt</a></p1>
+    <p1><img src="https://m.media-amazon.com/images/I/41MNLqUB38L._AC_SR320,320_.jpg"><br><a href="https://www.amazon.in/Sonata-Essentials-Analog-Black-Watch-77082SM01/dp/B078BPLG9R/ref=sr_1_32?keywords=watches+for+men&qid=1656670992&s=watches&sr=1-32" class="button">Sonata</a></p1>
+  </div>
+  <h1>Formals</h1>
+   <div class="container1">
+    <p1><img src="https://m.media-amazon.com/images/I/618Wek95laS._AC_UL480_FMwebp_QL65_.jpg"><br><a href="https://www.myntra.com/shirts/dennis-lingo/dennis-lingo-men-pink-slim-fit-casual-shirt/7488102/buy" class="button">Dennis</a></p1>
+    <p1><img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/8894685/2019/3/27/bc668260-5bd7-4cb1-9d91-239e2a5d1f221553667952837-Roadster-Men-Maroon--Navy-Blue-Regular-Fit-Checked-Casual-Sh-1.jpg"><br><a href="https://www.myntra.com/shirts/roadster/roadster-men-maroon--navy-blue-checked-sustainable-casual-shirt/1862801/buy" class="button">Roadster</a></p1>
+    <p1><img src="https://rukminim1.flixcart.com/image/714/857/ksqeky80/shirt/y/n/6/xxl-c610-grey-dennis-lingo-original-imag68eb6zs4qgg8.jpeg?q=50"><br><a href="https://www.flipkart.com/dennis-lingo-men-solid-formal-grey-shirt/p/itm38643f586482c?pid=SHTG68ECMXF7UFYC&lid=LSTSHTG68ECMXF7UFYC2MI1EC&marketplace=FLIPKART&store=clo%2Fash%2Faxc%2Fmmk%2Fbk1&srno=b_1_19&otracker=hp_rich_navigation_4_1.navigationCard.RICH_NAVIGATION_Fashion~Men%2527s%2BTop%2BWear~Men%2527s%2BFormal%2BShirts_V795R35ST9K6&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_4_L2_view-all&fm=organic&iid=a98ed9b4-f784-47b7-a7da-8dcffbee54a5.SHTG68ECMXF7UFYC.SEARCH&ppt=browse&ppn=browse&ssid=ol4wiadp6o0000001656320088227" class="button">Dennis</a></p1>
+  </div>
+   <h1>Casuals</h1>
+   <div class="container1">
+    <p1><img src="https://n3.sdlcdn.com/imgs/k/e/2/AUSK-Cotton-Blend-Regular-Fit-SDL727311346-1-1c74d.jpg"><br><a href="https://www.snapdeal.com/product/ausk-cotton-blend-regular-fit/672130603459
+" class="button">Asuk</a></p1>
+    <p1><img src="https://n1.sdlcdn.com/imgs/k/e/z/The-Emperor-Cotton-Blend-Regular-SDL001533320-1-92908.jpg"><br><a href="https://www.snapdeal.com/product/the-emperor-cotton-blend-black/8070451186006252570#bcrumbSearch:casual%20tshirts" class="button">Emperor</a></p1>
+    <p1><img src="https://n2.sdlcdn.com/imgs/k/e/u/AUSK-Cotton-Blend-Regular-Fit-SDL460042846-1-496a9.jpg"><br><a href="https://www.snapdeal.com/product/ausk-cotton-blend-multi-color/8070451180068106596#bcrumbSearch:casual%20tshirts" class="button">Asuk</a></p1>
+  </div>
+   <!-- Footer -->
+   <div class="footer-dark">
+        <footer>
+            <div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="shop.html">Our shop</a></li>
+                            <li><a href="detail.html">Shop Detail</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="prj2.html">Company</a></li>
+                            <li><a href="contact.html">Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Info</h3>
+                        <ul>
+                          <li><i class="icon ion-android-phone-portrait"></i>  +91 6302573585  </li>
+                          <li><i class="icon ion-android-mail"></i> info@gmail.com  </li>  
+                        </ul>
+                      </div><br>
+                   <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+                 <p style="text-align: center;">
+                    &copy; <h2 class="text-white font-weight-semi-bold">All Rights Reserved and Designed
+                    by---Terrific Trio</h2>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
